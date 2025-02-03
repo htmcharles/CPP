@@ -3,6 +3,7 @@ using namespace std;
 class Node{
 public:
 int data;
+
 Node *next;
 Node(){}
 Node(int d){
@@ -27,7 +28,7 @@ Node* addAtHead(Node *head,int value){
   sn->next=head;
   head=sn;
   return head;
-  } 
+  }
 int main(){
 Node *n1=new Node(10);
 Node *n2=new Node(20);
@@ -46,4 +47,3 @@ head=addNode(head,n5);
 //This should print 50->8->10->20->30->NULLL
 return 0;
 }
-
